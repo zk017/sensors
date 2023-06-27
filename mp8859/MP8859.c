@@ -28,7 +28,7 @@ int8_t init_one_mp8859(MP8859_T *pChip)
 			pChip->delay_msec_func(30);
 	}
 	pChip->chip_id = v_data_u8;
-	com_rslt = (v_chip_id_read_count == 0) ?MP8862_READ_ID_FAIL : MP8862_READ_ID_OK;
+	com_rslt = (v_chip_id_read_count == 0) ?MP8859_READ_ID_FAIL : MP8859_READ_ID_OK;
 	if (com_rslt == MP8859_READ_ID_OK)
 	{
 		LOGD("read chip ok\n");
